@@ -1,36 +1,63 @@
-# site settings
-title: 这是张炽的主页
-subtitle: Welcome
-email: zc_thu@163.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "zchi1.com" # the base hostname & protocol for your site
-author: 张炽
-street_address: Tsinghua Univ.
-city: Haidian
-state: Beijing
-zip_code: 55555
-country: China
-phone: (86) 131-1295-8850
+# Site settings
+title: Welcom
+header-img: "img/macbook.jpg"
+tagline: "cn"  
+description: "张炽|个人主页"  
+baseurl: ""
+url: "http://zchi1"  
 
-# homepage tiles
-tiles-source: posts # accepts "posts" or "pages"
-tiles-count: 6
+# About/contact
+owner: 
+  name: " Zchi"
+  email: c_zha@163.com
+  bio: "一个尝试"
 
-# social settings
-500px_url:
-facebook_url:
-github_url:
-gitlab_url: https://gitlab.com/u/andrewbanchich
-googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
-instagram_url: https://instagram.com
-linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
-pinterest_url:
-slack_url:
-twitter_url: https://twitter.com/andrewbanchich
+# Data
+gavatar: http://dreamofbook.qiniudn.com/Az..png
+favicon: img/favicon.png
 
-# build settings
+douban_username:  
+twitter_username: 
+github_username: 
+facebook_username: 
+weibo_username: 
+zhihu_username: 
+
+# Build settings  
+# use Github Flavored Markdown !important  
+# document: http://jekyllrb.com/docs/configuration/#kramdown  
 markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 8
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-sass:
-  style: compressed
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
+
+# Defaults for posts
+defaults:
+  -
+    scope: 
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "CnFeat"
+      header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
+
+# Comments 
+comments :
+  provider : duoshuo
+  duoshuo :
+    short_name : 
+  disqus :
+      short_name : 
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: 
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in footer navigation
