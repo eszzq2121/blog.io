@@ -1,31 +1,36 @@
-name: 我在干嘛
-author: 张炽
-baseurl: /zchi1
-description: theme for jekyll
-github: http://www.github.com/arnp
-twitter: http://www.twitter.com/
-facebook: http://www.facebook.com
-linkedin: http://www.linkedin.com
+# site settings
+title: 这是张炽的主页
+subtitle: Welcome
 email: zc_thu@163.com
-location: 39°59'50.32"N   116°19'13.05"E
-disqus: diqus-username
+description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "zchi1.com" # the base hostname & protocol for your site
+author: 张炽
+street_address: Tsinghua Univ.
+city: Haidian
+state: Beijing
+zip_code: 55555
+country: China
+phone: (86) 131-1295-8850
 
-##Make sure to edit the above fields, especially for disqus.
+# homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 6
 
+# social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url: https://gitlab.com/u/andrewbanchich
+googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
+instagram_url: https://instagram.com
+linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/andrewbanchich
 
-highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables"]
+# build settings
+markdown: kramdown
 
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+sass:
+  style: compressed
